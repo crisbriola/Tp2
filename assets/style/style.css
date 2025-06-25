@@ -1,0 +1,369 @@
+/* FONDO GENERAL */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* Tipografía de títulos */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  color: #ff0055;
+}
+
+/* INICIO */
+#inicio {
+  background: linear-gradient(to bottom, #0a0a0a, #000);
+  text-align: center;
+  padding: 160px 20px 80px;
+}
+
+.inicio_div h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff0055;
+}
+
+.subtitulo {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #ccc;
+  font-style: italic;
+}
+
+.inicio_contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.inicio_contenido img {
+  width: 400px;
+  border-radius: 12px;
+}
+
+.inicio_contenido iframe {
+  width: 600px;
+  height: 340px;
+  border-radius: 12px;
+}
+
+/* ÁLBUM */
+#album {
+  background-color: #000;
+  padding: 60px 20px 80px;
+  text-align: center;
+}
+
+.album_div h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ff0055;
+}
+
+.canciones_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cancion_card {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 15px;
+  width: 300px;
+  text-align: left;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.cancion_card:hover {
+  transform: scale(1.03);
+  background-color: #1f1f1f;
+}
+
+.cancion_card strong {
+  display: block;
+  color: #ff0055;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cancion_card iframe {
+  width: 100%;
+  height: 80px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* PREVENTA */
+#preventa {
+  background-color: #0d0d0d;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.preventa_div {
+  width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: linear-gradient(to right, #1a1a1a, #000000);
+  border: 1px solid #ff005522;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.1);
+}
+
+.preventa_div h2 {
+  font-size: 40px;
+  color: #ff0055;
+  margin-bottom: 25px;
+}
+
+.preventa_div p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.boton-preventa {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff0055;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.boton-preventa:hover {
+  background-color: white;
+  color: #ff0055;
+  transform: scale(1.05);
+}
+
+/* ARTISTA */
+#artista {
+  background-color: #000;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.artista_div {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.artista_div h2 {
+  font-size: 42px;
+  color: #ff0055;
+  margin-bottom: 40px;
+}
+
+.bio_contenido {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bio_contenido img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.2);
+}
+
+.bio_contenido p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  width: 600px;
+  color: #e0e0e0;
+}
+
+/* CONTACTO */
+#contacto {
+  background-color: #000;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contacto_div {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.contacto_div h2 {
+  font-size: 36px;
+  color: #ff0055;
+  margin-bottom: 20px;
+}
+
+.contacto_div p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form_grupo {
+  text-align: left;
+}
+
+.form_grupo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 16px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bbb;
+}
+
+button {
+  background-color: #ff0055;
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: #ff0055;
+  transform: scale(1.05);
+}
+
+/* ANIMACIONES */
+nav a,
+.boton-preventa,
+button,
+.album_div ul.canciones li {
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+
+.album_div ul.canciones li:hover {
+  transform: scale(1.02);
+  background-color: #1f1f1f;
+}
+
+/* BOTÓN VOLVER ARRIBA */
+.btn-arriba {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #ff0055;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1001;
+  box-shadow: 0 0 10px rgba(255, 0, 85, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-arriba:hover {
+  background-color: white;
+  color: #ff0055;
+  transform: scale(1.1);
+}
+
+/* LÍNEA BLANCA EN SECCIONES */
+.album_div,
+.preventa_div,
+.artista_div,
+.contacto_div {
+  border-bottom: 1px solid #ffffff22;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
+
+/* HOVER SUAVE EN TÍTULOS */
+h2 {
+  transition: transform 0.3s ease;
+}
+
+h2:hover {
+  transform: scale(1.05);
+  color: #ff0055;
+}
